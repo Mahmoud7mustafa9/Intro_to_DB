@@ -20,6 +20,7 @@ address TEXT
 )
 
 CREATE TABLE Orders(
+order_date DATE
 order_id INT,
 customer_id INT,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
